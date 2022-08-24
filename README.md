@@ -1,6 +1,10 @@
 # AE BlendShape (ae_blendshape)
 A BlendShape Tools for Adobe After Effects
 
+## 📌 Latest Release
+- v0.0.1-nightly
+- https://github.com/liuaddie/ae_blendshape/releases/download/v0.0.1-nightly/BlendShape.jsx
+
 ## ⚙️ Features
 Create a easy animation control for shapes transformation in AE.
 
