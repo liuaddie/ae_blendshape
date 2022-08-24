@@ -15,7 +15,7 @@
         resizable: true,
         closeButton: false
       });
-      res = "Group{orientation:'column',\
+      res = "panel{orientation:'column',\
               a1: Group{orientation:'row',\
                 addBlendShape: Button{text:'Add BlendShape'},\
               },\
