@@ -2,7 +2,19 @@
 A BlendShape Tools for Adobe After Effects
 
 ## ⚙️ Features
-- Create a easy animation control for shapes transformation in AE.
+Create a easy animation control for shapes transformation in AE.
+
+## 🎉 Install
+Copy "BlendShape.jsx" into following folder:
+
+#### Windows
+```
+Program Files\Adobe\Adobe After Effects <version>\Support Files\Scripts\ScriptUI Panels
+```
+ #### Mac
+```
+Applications/Adobe After Effects <version>/Scripts/ScriptUI Panels
+```
 
 ## 💻 Developing Environment
 #### System
