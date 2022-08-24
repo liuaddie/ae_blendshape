@@ -15,19 +15,20 @@
         resizable: true,
         closeButton: false
       });
-      res = "panel{orientation:'column',\
+      res = "Group{orientation:'column',\
               a1: Group{orientation:'row',\
                 addBlendShape: Button{text:'Add BlendShape'},\
               },\
               a2: Group{orientation:'row',\
-                verText: StaticText{text:'v0.0.1'},\
+                verText: StaticText{text:'v0.0.1-nightly', alignment:'right'},\
               },\
             }";
 
       mainPanel.grp = mainPanel.add(res);
 
       //Button Appearant
-      mainPanel.grp.a2.verText.alignment = ["right","top"];
+      mainPanel.grp.a2.alignment = ['right','top'];
+      mainPanel.grp.a2.verText.graphics.foregroundColor = mainPanel.grp.a2.verText.graphics.newPen (mainPanel.grp.a2.verText.graphics.PenType.SOLID_COLOR, [0.72, 0.43, 0.18], 1);
 
       //Button Trigger
       mainPanel.grp.a1.addBlendShape.onClick = function() {
