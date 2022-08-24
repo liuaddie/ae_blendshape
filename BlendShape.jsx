@@ -15,16 +15,19 @@
         resizable: true,
         closeButton: false
       });
-      res = "group{orientation:'column',\
+      res = "panel{orientation:'column',\
               a1: Group{orientation:'row',\
                 addBlendShape: Button{text:'Add BlendShape'},\
+              },\
+              a2: Group{orientation:'row',\
+                verText: StaticText{text:'v0.0.1'},\
               },\
             }";
 
       mainPanel.grp = mainPanel.add(res);
 
       //Button Appearant
-      // mainPanel.grp.a1.addBlendShape.size = [150, 25];
+      mainPanel.grp.a2.verText.alignment = ["right","top"];
 
       //Button Trigger
       mainPanel.grp.a1.addBlendShape.onClick = function() {
