@@ -20,7 +20,7 @@
                 addBlendShape: Button{text:'Add BlendShape'},\
               },\
               a2: Group{orientation:'row',\
-                verText: StaticText{text:'v0.0.1-nightly', alignment:'right'},\
+                verText: StaticText{text:'v0.0.2-nightly', alignment:'right'},\
               },\
             }";
 
