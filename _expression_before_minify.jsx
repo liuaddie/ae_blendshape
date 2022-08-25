@@ -18,7 +18,7 @@ var emoPath = [
 // obfuscation below code and copy to main jsx
 var emo = effect("BlendShape")("Menu");
 var emoDur = effect("BlendShape Duration")("Slider");
-const pTime = 0;
+var pTime = 0;
 
 // find previous key index in the Drop Down Menu
 // if not enough 2 keys, cannot do transition, so return 0
