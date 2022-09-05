@@ -53,11 +53,40 @@
 
 		// Return for object properties
 		this.shape = TargetPath.valueAtTime(TargetTime); // Shape of TargetTime
+		this.ptNUm = pp.length; // Integer, Number of points
 		this.pt = pt; // Array, All points
 		this.ptOnPath = ptOnPath; // Array, pointOnPath Percentage of all points
 		this.ptCenter = ppSum/step; // Position, Real Shape Center
 		this.ptMin = ppMin; // Position, Shape Min Point
 		this.ptMax = ppMax; // Position, Shape Max Point
-	} // End of shapeObj
+	}, // End of shapeObj
+
+	"shapeGpObj": function(shape1, shape2) {
+	  var sMaxPoints = (shape1.ptNum == Math.max(shape1.ptNum, shape2.ptNum));
+	  var pair = [];
+	  var pairTar = [];
+	  var diff = shape1.ptCenter - shape2.ptCenter;
+	  var dist = 0;
+	  for (i = 0; i < shape2.ptNum; i++) {
+	    shape2.pt[i] += diff;
+	    pair.push();
+	    pairTar.push();
+	    for (j = 0; j < shape1.ptNum; j++) {
+	      dist = length(shape1.pt[j], shape2.pt[i]);
+	      if (j == 0) {
+	        pair[i] = dist;
+	        pairTar[i] = j;
+	      } else {
+	        pair[i] = Math.min(dist, pair[i]);
+	      }
+	      if (pair[i] == dist) {
+	        pairTar[i] = j;
+	      }
+	      // pair[i].push(length(shape1.pt[j], shape2.pt[i]));
+	    }
+	  }
+		this.boss = sMaxPoints;
+	  this.near = pairTar;
+	}// End of compareShape
 
 } // End of JSON
